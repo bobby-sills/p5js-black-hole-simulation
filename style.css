@@ -90,7 +90,7 @@ button:active {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1em;
   color: var(--fg);
-  min-width: 5.5em;
+  min-width: 10em;
   margin-left: 8px;
 }
 
