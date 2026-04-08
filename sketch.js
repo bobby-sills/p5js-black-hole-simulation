@@ -140,13 +140,16 @@ function setup() {
   buttonRow.class('button-row');
   buttonRow.parent('controls');
 
-  const pauseButton = createButton('Pause');
-  pauseButton.parent(buttonRow);
-  pauseButton.mousePressed(() => isPaused = !isPaused);
-
   const restartButton = createButton('Restart');
   restartButton.parent(buttonRow);
   restartButton.mousePressed(restart);
+
+  const pauseButton = createButton('Pause');
+  pauseButton.parent(buttonRow);
+  pauseButton.mousePressed(() => {
+    isPaused = !isPaused;
+    pauseButton.html(isPaused ? 'Play' : 'Pause');
+  });
 
   let speedRow = createDiv();
   speedRow.class('slider-row');
