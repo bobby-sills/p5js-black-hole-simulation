@@ -98,6 +98,7 @@ function windowResized() {
 let isPaused = false;
 
 function restart() {
+  background(50);
   noStroke();
 
   const mass = (massSlider ? massSlider.value() : 10) * solarMass;
